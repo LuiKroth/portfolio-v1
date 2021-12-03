@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Pavanam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* Palette */
+
+/* 
+#DA0037
+#EDEDED
+#444444
+#171717 
+*/
+
+.root {
+  top: 0;
+  left: 0;
+  display: grid;
+}
+
+.content {
+  font-family: 'Pavanam';
+  user-select: none;
+  display: flex;
+}
+
+.logo {
+  width: 50px;
+  height: 30px;
+  background-color: blue;
+}
+
+.header {
+  display: flex;
+  padding: 0 50px;
+  min-height: 130px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar ul {
+  float: right;
+}
+
+.navbar ul li, .navbar ul a {
+  display: inline-block;
+  margin: 0 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: #DA0037;
+} 
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
