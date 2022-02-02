@@ -1,8 +1,15 @@
+
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import test from '../public/test.jpg'
+import test1 from '../public/test1.jpg'
+import React, {useEffect, useState} from 'react'
+import { throws } from 'assert'
 
+// put the email along with my socials link
+console.log(styles)
 const Home: NextPage = () => {
   return (
     <div className={styles.root}>
@@ -14,22 +21,94 @@ const Home: NextPage = () => {
       </Head>
       <div className={styles.layout}>
         <header className={styles.header}>
-          <nav className = {styles.navbar}>
-            <ul>
-              <li><a href={'#'}>About Me</a></li>
-              <li><a href={'#'}>Projects</a></li>
-              <li><a href={'#'}>Contact</a></li>
-            </ul>
-          </nav>
+          <Navbar/>
         </header>
         <div className={styles.content}>
           <main>
-            
+            <section className={styles.main}>
+              <div className={styles.mainText}>
+                <h1>
+                  <p className={styles.salution}> Hello there, my name is</p>
+                  <p className={styles.name}>Luiz Kroth.</p>
+                  <p className={styles.work}> I ‘m a Software Engineer Student.</p>
+                  <p className={styles.who}>I’m a brazilian software engineer student, mostly focused on front-end web development.</p>
+                </h1>
+              </div>
+            </section>
+            <section className={styles.AboutMe} id='AboutMe'>
+              <div className={styles.Resume}>
+                <div className={styles.AboutPicture}>
+                  <Image src={test1} className={styles.ProfilePic}></Image>
+                </div>
+                <span className={styles.AboutHead}>About Me</span>
+                <hr></hr>
+                <div className={styles.AboutText}>
+                  <p>
+                    Greetings! My name is Luiz and I'm a 20 years old software engineer student at Univates,
+                    I began learning how to code in the first half of 2020, when i joined Univates.
+                    The first coding language I learned there was Java, where I gained an understanding
+                    of variables, loops, arrays, classes, inheritance, ... 
+                  </p>
+                  <p>
+                    Later on that year I started learning Javascript, HTML, CSS, but mostly NodeJS, my 
+                    first personal project was a Discord Chat Bot which purpose was to help server management, 
+                    and it also had some fun interactions in certain commands. Turned out that i learned a lot
+                    while building it.
+                  </p>
+                  <p>
+                    Some languages and frameworks that I'm currently using/learning:
+                  </p>
+                  <ul className={styles.TechSkills}>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Next.Js</li>
+                    <li>React</li>
+                    <li>Python</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
           </main>
         </div>
       </div>
     </div>
   )
-}
+};
 
 export default Home
+
+
+class Navbar extends React.Component<{}, any> {
+  constructor(props: Readonly<{}> | {}) {
+    super(props);
+    this.state = {
+      show: true,
+      scrollPos: 0
+    };
+  }
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    this.setState({
+      scrollPos: document.body.getBoundingClientRect().top,
+      show: document.body.getBoundingClientRect().top > this.state.scrollPos
+    });
+  };
+  
+  render() {
+    console.log(this.state);
+    return (<nav className = {this.state.show ? styles.active : styles.hidden}>
+            <ul>
+              <li><a href={'#AboutMe'}>About Me</a></li>
+              <li><a href={'#'}>Projects</a></li>
+              <li><a href={'#'}>Contact</a></li>
+            </ul>
+          </nav>)
+  }
+}

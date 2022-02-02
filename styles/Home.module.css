@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pavanam&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap');
 /* Palette */
 
 /* 
@@ -18,19 +18,23 @@
 .content {
   font-family: 'Pavanam';
   user-select: none;
-  display: flex;
+  height: 100%;
 }
 
 .logo {
   width: 50px;
   height: 30px;
-  background-color: blue;
 }
 
 .header {
   display: flex;
+  position: fixed;
   padding: 0 50px;
   min-height: 130px;
+  align-items: center;
+  top: 0%;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .navbar {
@@ -39,16 +43,57 @@
   position: relative;
   justify-content: flex-end;
   align-items: center;
+  -moz-box-align: center;
+  -moz-box-pack: justify;
 }
 
-.navbar ul {
-  float: right;
+.active {
+  visibility: visible;
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  -moz-box-align: center;
+  -moz-box-pack: justify;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
 }
 
-.navbar ul li, .navbar ul a {
-  display: inline-block;
-  margin: 0 5px;
-  font-family: 'Montserrat', sans-serif;
+.hidden {
+  visibility: hidden;
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  -moz-box-align: center;
+  -moz-box-pack: justify;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.active ul {
+  float: none;
+}
+
+.active ul li, .active ul a {
+  display: inline-flex;
+  padding: 0 10px;
+  font-family: 'Miriam Libre', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: #DA0037;
+} 
+
+.hidden ul {
+  float: none;
+}
+
+.hidden ul li, .hidden ul a {
+  display: inline-flex;
+  padding: 0 10px;
+  font-family: 'Miriam Libre', sans-serif;
   font-size: 30px;
   text-decoration: none;
   color: #DA0037;
@@ -56,6 +101,117 @@
 
 .layout {
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: center;
+}
+
+.mainText {
+  font-family: 'Pavanam', sans-serif;
+  margin: 0px auto;
+}
+
+.salution {
+  position: relative;
+  color: #EDEDED;
+  font-size: clamp(17px,4vw,23px);
+  margin: 0px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.name {
+  position: relative;
+  color: #DA0037;
+  font-size: clamp(50px,7vw, 90px);
+  margin: 0px;
+  line-height: 1.1;
+}
+
+.work{
+  position: relative;
+  color: #EDEDED;
+  font-size: clamp(50px,5vw, 90px);
+  margin: 0px;
+  line-height: 1;
+}
+
+.who {
+  position: relative;
+  color: #444444;
+  font-size: 25px;
+  margin: 0px;
+  margin-left: 5px;
+}
+
+.AboutMe {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: center;
+}
+
+.AboutHead {
+  display: inline-block;
+  font-size: 40px;
+  color: #DA0037;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.Resume {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.AboutText {
+  position: relative;
+  display: block;
+  color: #EDEDED;
+  font-size: 20px;
+  width: clamp(200px, 90%, 800px);
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.AboutPicture {
+  display: block;
+  width: 19vw;
+  margin: 0 auto;
+  padding: 10px 10px;
+  border-radius: 190px;
+  border: 4px solid #EDEDED;
+}
+
+.ProfilePic {
+  border-radius: 190px;
+  background-size: 100% 100%;
+}
+
+
+.TechSkills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 400px));
+  gap: 0 10px;
+  list-style: none;
+}
+
+.TechSkills li::before {
+  content: "\2022";
+  color: #DA0037;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
