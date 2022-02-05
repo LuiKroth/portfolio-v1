@@ -17,7 +17,6 @@
 
 .content {
   font-family: 'Pavanam';
-  user-select: none;
   height: 100%;
 }
 
@@ -35,17 +34,9 @@
   top: 0%;
   width: 100%;
   justify-content: space-between;
+  z-index: 9999;
 }
 
-.navbar {
-  display: flex;
-  width: 100%;
-  position: relative;
-  justify-content: flex-end;
-  align-items: center;
-  -moz-box-align: center;
-  -moz-box-pack: justify;
-}
 
 .active {
   visibility: visible;
@@ -56,8 +47,7 @@
   align-items: center;
   -moz-box-align: center;
   -moz-box-pack: justify;
-  transition: 0.5s;
-  transition-timing-function: ease-in;
+  transition: .5s ease-in-out;
 }
 
 .hidden {
@@ -69,8 +59,8 @@
   align-items: center;
   -moz-box-align: center;
   -moz-box-pack: justify;
-  transition: 0.2s;
-  transition-timing-function: ease-out;
+  transition: .5s ease-in-out;
+  transform: translateY(-100px);
 }
 
 .active ul {
@@ -187,7 +177,7 @@
 
 .AboutPicture {
   display: block;
-  width: 19vw;
+  width: clamp(100px, 24vw, 300px);
   margin: 0 auto;
   padding: 10px 10px;
   border-radius: 190px;
@@ -214,4 +204,162 @@
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+.HamButton, .HamHidden, .sideNav {
+  display: none;
+}
+
+.HamIcon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .active ul, .hidden ul{
+    display: none;
+    
+  }
+
+  .HamButton, .HamHidden {
+    display: flex;
+    position: absolute;
+    width: 70px;
+    text-transform: none;
+    border: none;
+    align-items: center;
+    padding: 15px;
+    z-index: 9999;
+    right: 0%;
+    transition: 0.5s ease-in-out;
+  }
+  .HamButton {
+    background-color: #444444;
+    right: 0%;
+  }
+
+  .HamHidden {
+    background-color: transparent;
+    right: -40px;
+  }
+
+  
+.HamIcon {
+  display: inline-block;
+  height: 24px;
+  width: 30px;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.HamBars {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+}
+
+.HamBars span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: #DA0037;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out ;
+  -moz-transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out;
+}
+
+.HamBars span:nth-child(1) {
+  top: 0px;
+}
+
+.HamBars span:nth-child(2), .HamBars span:nth-child(3) {
+  top: 10px;
+}
+
+.HamBars span:nth-child(4) {
+  top: 20px;
+}
+
+.HamBars.open span:nth-child(1) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+.HamBars.open span:nth-child(2) {
+  transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+
+.HamBars.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+
+.HamBars.open span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+.sideNav {
+  display: flex;
+  position: absolute;
+  width: 70vw;
+  height: 100vh;
+  align-items: center;
+  top: 0;
+  right: -100vw;
+  background-color: #222222;
+  transition: .5s ease-in-out;
+  box-shadow: -25px 0 100px black;
+}
+
+.sideNav ul {
+  display: block;
+  position: relative;
+  list-style: none;
+  margin: 0 auto;
+  font-family: 'Pavanam', sans-serif;
+  font-size: clamp(30px, 10vw, 100px);
+  justify-items: center;
+  text-align: center;
+}
+
+.sideNav ul li {
+  display: block;
+  color: #DA0037;
+  background-color: #171717;
+  border-radius: 60px;
+  margin: 10px 0;
+  width: 60vw;
+  transition: .3s ease-in-out;
+}
+
+.sideNav ul li:hover {
+  color: #fd648a;
+  transition: .3s ease-in-out;
+}
+
+.openSlide {
+  right: 0vw;
+  transition: .5s ease-in-out;
+}
 }

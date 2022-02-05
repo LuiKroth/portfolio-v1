@@ -3,13 +3,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import test from '../public/test.jpg'
 import test1 from '../public/test1.jpg'
-import React, {useEffect, useState} from 'react'
-import { throws } from 'assert'
+import React from 'react'
+import NavBar from '../components/Navbar'
 
-// put the email along with my socials link
-console.log(styles)
 const Home: NextPage = () => {
   return (
     <div className={styles.root}>
@@ -20,9 +17,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.layout}>
-        <header className={styles.header}>
-          <Navbar/>
-        </header>
+        <NavBar/>
         <div className={styles.content}>
           <main>
             <section className={styles.main}>
@@ -49,8 +44,9 @@ const Home: NextPage = () => {
                     The first coding language I learned there was Java, where I gained an understanding
                     of variables, loops, arrays, classes, inheritance, ... 
                   </p>
-                  <p>
-                    Later on that year I started learning Javascript, HTML, CSS, but mostly NodeJS, my 
+                  {/* mudar o texto de baixo ta mt ruim */}
+                  <p>  
+                    Later on that year I started learning by my self Javascript, HTML, CSS, but mostly NodeJS, my 
                     first personal project was a Discord Chat Bot which purpose was to help server management, 
                     and it also had some fun interactions in certain commands. Turned out that i learned a lot
                     while building it.
@@ -77,38 +73,3 @@ const Home: NextPage = () => {
 };
 
 export default Home
-
-
-class Navbar extends React.Component<{}, any> {
-  constructor(props: Readonly<{}> | {}) {
-    super(props);
-    this.state = {
-      show: true,
-      scrollPos: 0
-    };
-  }
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-
-  handleScroll = () => {
-    this.setState({
-      scrollPos: document.body.getBoundingClientRect().top,
-      show: document.body.getBoundingClientRect().top > this.state.scrollPos
-    });
-  };
-  
-  render() {
-    console.log(this.state);
-    return (<nav className = {this.state.show ? styles.active : styles.hidden}>
-            <ul>
-              <li><a href={'#AboutMe'}>About Me</a></li>
-              <li><a href={'#'}>Projects</a></li>
-              <li><a href={'#'}>Contact</a></li>
-            </ul>
-          </nav>)
-  }
-}
