@@ -54,8 +54,8 @@ class NavBar extends React.Component<{}, any> {
 
     render() {
       return (
-        <header className={styles.header}>
-          <nav className = {this.state.show ? styles.active : styles.hidden}>
+        <header className={`${this.state.scrollPos == 0 ? styles.header : styles.headerScroll} ${this.state.show ? styles.headerEffectOnScroll : styles.hidden}`}>
+          <nav className = {`${styles.navB} ${this.state.show ? styles.active : styles.hidden}`}>
               <ul>
                 <li><a href={'#AboutMe'}>About Me</a></li>
                 <li><a href={'#Projects'}>Projects</a></li>

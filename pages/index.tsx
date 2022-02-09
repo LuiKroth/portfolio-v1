@@ -44,12 +44,8 @@ const Home: NextPage = () => {
                     The first coding language I learned there was Java, where I gained an understanding
                     of variables, loops, arrays, classes, inheritance, ... 
                   </p>
-                  {/* mudar o texto de baixo ta mt ruim */}
                   <p>  
-                    Later on that year I started learning by my self Javascript, HTML, CSS, but mostly NodeJS, my 
-                    first personal project was a Discord Chat Bot which purpose was to help server management, 
-                    and it also had some fun interactions in certain commands. Turned out that i learned a lot
-                    while building it.
+            
                   </p>
                   <p>
                     Some languages and frameworks that I'm currently using/learning:
@@ -65,8 +61,15 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </section>
+            <section className={styles.Projects}>
+
+            </section>
+            <section className={styles.Contact}>
+
+            </section>
           </main>
         </div>
+        <footer></footer>
       </div>
     </div>
   )
