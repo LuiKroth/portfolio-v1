@@ -7,7 +7,7 @@ class NavBar extends React.Component<{}, any> {
       super(props);
       this.state = {
         show: true,
-        scrollPos: 0,
+        scrollPos: 0
       };
     }
     componentDidMount() {
@@ -26,7 +26,6 @@ class NavBar extends React.Component<{}, any> {
           show: document.body.getBoundingClientRect().top > this.state.scrollPos
         });
       }
-      console.log(this.state.scrollPos)
     };
     
     toggleClassMenu = () => {
@@ -54,7 +53,7 @@ class NavBar extends React.Component<{}, any> {
 
     render() {
       return (
-        <header className={`${this.state.scrollPos == 0 ? styles.header : styles.headerScroll} ${this.state.show ? styles.headerEffectOnScroll : styles.hidden}`}>
+        <header className={`${this.state.scrollPos == 0 ? styles.header : styles.headerScroll} ${!this.state.show && window.innerWidth > 800 ? styles.hidden : styles.headerEffectOnScroll }`}>
           <nav className = {`${styles.navB} ${this.state.show ? styles.active : styles.hidden}`}>
               <ul>
                 <li><a href={'#AboutMe'}>About Me</a></li>

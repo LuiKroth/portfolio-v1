@@ -36,7 +36,7 @@
   justify-content: space-between;
   z-index: 9999;
   background-color: transparent;
-  transition: .5s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 .headerScroll {
@@ -51,7 +51,7 @@
   z-index: 9999;
   background-color: #222222;
   box-shadow: 0 20px 40px -10px #000;
-  transition: .5s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 .headerEffectOnScroll {
@@ -66,7 +66,7 @@
   align-items: center;
   -moz-box-align: center;
   -moz-box-pack: justify;
-  transition: .5s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 .active {
@@ -89,12 +89,12 @@
   font-size: 30px;
   text-decoration: none;
   color: #DA0037;
-  transition: .2s ease-in-out;
+  transition: .25s ease-in-out;
 } 
 
 .active ul a:hover {
   color: #fd648a;
-  transition: .2s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 .hidden ul {
@@ -194,6 +194,7 @@
   width: clamp(200px, 90%, 800px);
   text-align: justify;
   margin: 0 auto;
+  line-height: 1.5;
 }
 
 .AboutPicture {
@@ -382,5 +383,14 @@
 .openSlide {
   right: 0vw;
   transition: .5s ease-in-out;
+}
+
+.header {
+  min-height: 90px;
+}
+
+.headerScroll {
+  box-shadow: none;
+  background-color: transparent;
 }
 }

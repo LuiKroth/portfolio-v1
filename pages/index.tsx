@@ -45,7 +45,7 @@ const Home: NextPage = () => {
                     of variables, loops, arrays, classes, inheritance, ... 
                   </p>
                   <p>  
-            
+                    
                   </p>
                   <p>
                     Some languages and frameworks that I'm currently using/learning:
