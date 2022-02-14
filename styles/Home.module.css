@@ -147,7 +147,7 @@
   line-height: 1.1;
 }
 
-.work{
+.work {
   position: relative;
   color: #EDEDED;
   font-size: clamp(50px,5vw, 90px);
@@ -177,7 +177,7 @@
   font-size: 40px;
   color: #DA0037;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .Resume {
@@ -206,6 +206,9 @@
   border: 4px solid #EDEDED;
 }
 
+.Resume hr {
+  width: 100%;
+}
 .ProfilePic {
   border-radius: 190px;
   background-size: 100% 100%;
@@ -256,6 +259,9 @@
     z-index: 9999;
     right: 0%;
     transition: 0.5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
   }
   .HamButton {
     background-color: #444444;
@@ -273,6 +279,9 @@
   height: 24px;
   width: 30px;
   transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
   cursor: pointer;
 }
 
@@ -282,6 +291,9 @@
   height: 100%;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
 }
 
 .HamBars span {
@@ -351,6 +363,9 @@
   right: -100vw;
   background-color: #222222;
   transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
   box-shadow: -25px 0 100px black;
 }
 
@@ -373,16 +388,25 @@
   margin: 10px 0;
   width: 60vw;
   transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
 }
 
 .sideNav ul li:hover {
   color: #fd648a;
   transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
 }
 
 .openSlide {
   right: 0vw;
   transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
 }
 
 .header {
@@ -393,4 +417,83 @@
   box-shadow: none;
   background-color: transparent;
 }
+}
+
+.highlight {
+  color: #DA0037;
+}
+
+.Projects {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+}
+
+.ProjectsField {
+  display: grid;
+  width: 100%;
+  height: 90vh;
+  grid-template-columns: 33% 33%;
+  gap: 10%;
+  margin-top: 20px;
+}
+
+.Projects hr {
+  width: 100%;
+  height: 2px;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.Project {
+  display: block;
+  position: relative;
+  background-color: #353535;
+  height: 40vh;
+  width: 100%;
+  box-shadow: 10px 10px black;
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+}
+
+.ProjectI {
+  filter: grayscale(100);
+  width: 100px;
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+}
+
+.Project:hover .ProjectI {
+  filter: grayscale(0);
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+}
+
+.Project:hover {
+  box-shadow: none;
+  margin-left: 10px;
+  margin-top: 10px;
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+}
+
+.ProjectTitle {
+  display: flex;
+  position: relative;
+  font-size: clamp(17px,4vw,23px);
+  font-family: 'Miriam Libre', sans-serif;
+  color: #DA0037;
+  margin-top: 10px;
+  margin-left: 20px;
 }
