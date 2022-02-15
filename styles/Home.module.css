@@ -173,17 +173,21 @@
 }
 
 .AboutHead {
-  display: inline-block;
+  display: flex;
   font-size: 40px;
   color: #DA0037;
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 20px 200px;
+  border: 1px solid #EDEDED;
+  margin-bottom: 10px;
 }
 
 .Resume {
   display: grid;
   width: 100%;
   margin: 0 auto;
+  align-items: center;
+  grid-template-columns: 35% 65%;
 }
 
 .AboutText {
@@ -193,24 +197,21 @@
   font-size: 20px;
   width: clamp(200px, 90%, 800px);
   text-align: justify;
-  margin: 0 auto;
   line-height: 1.5;
 }
 
 .AboutPicture {
-  display: block;
+  display: flex;
+  height: 290px;
   width: clamp(100px, 24vw, 300px);
   margin: 0 auto;
   padding: 10px 10px;
-  border-radius: 190px;
-  border: 4px solid #EDEDED;
+  border-radius: 0px;
+  border: 1px solid #EDEDED;
 }
 
-.Resume hr {
-  width: 100%;
-}
 .ProfilePic {
-  border-radius: 190px;
+  border-radius: 0px;
   background-size: 100% 100%;
 }
 
@@ -239,6 +240,126 @@
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.highlight {
+  color: #DA0037;
+}
+
+.Projects {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+}
+
+.ProjectsField {
+  display: grid;
+  width: 100%;
+  height: 80vh;
+  grid-template-columns: 33% 33% 33%;
+  margin-top: 30px;
+  gap: 10%;
+}
+
+.Projects hr {
+  width: 100%;
+  height: 2px;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.Project {
+  display: grid;
+  position: relative;
+  background-color: #353535;
+  height: clamp(200px,30vh, 280px);
+  width: 100%;
+  box-shadow: 10px 10px black;
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+}
+
+.ProjectI {
+  filter: grayscale(100);
+  transition: .2s ease-in-out;
+  transform: scale(1.3);
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+}
+
+.Project:hover .ProjectI {
+  filter: grayscale(0);
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+}
+
+.Project:hover {
+  box-shadow: none;
+  margin-left: 10px;
+  margin-top: 10px;
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+}
+
+.ProjectTitle {
+  display: inline-flex;
+  position: relative;
+  font-size: clamp(17px,4vw,23px);
+  font-family: 'Miriam Libre', sans-serif;
+  color: #EDEDED;
+  margin: auto auto auto 20px;
+}
+
+.ProjectLogo {
+  margin: auto 15px auto auto;
+  font-size: 30px;
+  color: #EDEDED;
+}
+
+.ProjectText {
+  display: flex;
+  width: 100%;
+}
+
+.Project:hover .ProjectText .ProjectLogo {
+  color: #DA0037;
+  transition: .25s ease-in-out;
+}
+
+.Title {
+  color: #DA0037;
+  font-size: clamp(20px,6vw,27px);
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #EDEDED;
+}
+
+.Contact {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1400px) {
+  .Resume {
+    grid-template-columns: 100%;
+  }
+  
+  .AboutPicture {
+    width: 200px;
+    height: auto;
+  }
+  .AboutText {
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -357,7 +478,7 @@
   display: flex;
   position: absolute;
   width: 70vw;
-  height: 100vh;
+  height: 115vh;
   align-items: center;
   top: 0;
   right: -100vw;
@@ -417,83 +538,27 @@
   box-shadow: none;
   background-color: transparent;
 }
-}
-
-.highlight {
-  color: #DA0037;
-}
-
-.Projects {
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: flex-start; 
-    justify-content: center;
-}
 
 .ProjectsField {
-  display: grid;
-  width: 100%;
-  height: 90vh;
-  grid-template-columns: 33% 33%;
+  grid-template-columns: 50% 50%;
   gap: 10%;
-  margin-top: 20px;
-}
-
-.Projects hr {
-  width: 100%;
-  height: 2px;
-  margin-top: 3%;
-  text-align: center;
 }
 
 .Project {
-  display: block;
-  position: relative;
-  background-color: #353535;
-  height: 40vh;
-  width: 100%;
-  box-shadow: 10px 10px black;
-  transition: .2s ease-in-out;
-  -webkit-transition: .2s ease-in-out;
-  -o-transition: .2s ease-in-out;
-  -moz-transition: .2s ease-in-out;
-}
-
-.ProjectI {
-  filter: grayscale(100);
-  width: 100px;
-  transition: .2s ease-in-out;
-  -webkit-transition: .2s ease-in-out;
-  -o-transition: .2s ease-in-out;
-  -moz-transition: .2s ease-in-out;
-}
-
-.Project:hover .ProjectI {
-  filter: grayscale(0);
-  transition: .2s ease-in-out;
-  -webkit-transition: .2s ease-in-out;
-  -o-transition: .2s ease-in-out;
-  -moz-transition: .2s ease-in-out;
-}
-
-.Project:hover {
-  box-shadow: none;
-  margin-left: 10px;
-  margin-top: 10px;
-  transition: .2s ease-in-out;
-  -webkit-transition: .2s ease-in-out;
-  -o-transition: .2s ease-in-out;
-  -moz-transition: .2s ease-in-out;
+  height: 25vh;
 }
 
 .ProjectTitle {
-  display: flex;
-  position: relative;
-  font-size: clamp(17px,4vw,23px);
-  font-family: 'Miriam Libre', sans-serif;
-  color: #DA0037;
   margin-top: 10px;
-  margin-left: 20px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  .Project {
+    height: 17vh;
+  }
+
+  .ProjectTitle {
+    margin-top: 10px;
+  }
 }
