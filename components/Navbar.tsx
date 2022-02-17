@@ -12,14 +12,14 @@ class NavBar extends React.Component<{}, any> {
     }
     componentDidMount() {
       window.addEventListener('scroll', this.handleScroll);
-      document.getElementById('test')!.addEventListener('click',this.toggleClassMenu)
+      document.getElementById('hamburgerMenu')!.addEventListener('click',this.toggleClassMenu)
     }
     componentWillUnmount() {
       window.removeEventListener('scroll', this.handleScroll);
     }
   
     handleScroll = () => {
-      let buttonId = document.getElementById('test');
+      let buttonId = document.getElementById('hamburgerMenu');
       if (!buttonId!.classList.contains(styles.open)){
         this.setState({
           scrollPos: document.body.getBoundingClientRect().top,
@@ -29,7 +29,7 @@ class NavBar extends React.Component<{}, any> {
     };
     
     toggleClassMenu = () => {
-      let buttonId = document.getElementById('test');
+      let buttonId = document.getElementById('hamburgerMenu');
       let ham = document.getElementById('Ham');
       let sideBar = document.getElementById('sideBar');
 
@@ -63,7 +63,7 @@ class NavBar extends React.Component<{}, any> {
             </nav>
             <button className={this.state.show ? styles.HamButton : styles.HamHidden} id='Ham'>
               <div className={styles.HamIcon}>
-                <div className={styles.HamBars} id='test'>
+                <div className={styles.HamBars} id='hamburgerMenu'>
                   <span></span>
                   <span></span>
                   <span></span>

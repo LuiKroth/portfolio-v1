@@ -33,10 +33,10 @@ const Home: NextPage = () => {
             </section>
             <section className={styles.AboutMe} id='AboutMe'>
               {/* mudar o estilo do titulo. */}
-              <span className={styles.AboutHead}>About Me</span>
+              <h2 className={styles.Title}>About Me</h2>
               <div className={styles.Resume}>
                 <div className={styles.AboutPicture}>
-                  <Image src={test1} className={styles.ProfilePic}></Image>
+                  <Image src={test1} className={styles.ProfilePic} alt="High School Graduation 2019"></Image>
                 </div>
                 <div className={styles.AboutText}>
                   <p>
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                   </p>
                   <p>  
                     I started studying JavaScript, HTML and CSS by my own in the middle of 2021, now I'm 
-                    mostly focused in learning TypeScript, in fact this whole portfolio it was made using TypeScript 
+                    mostly focused in learning TypeScript, in fact this whole portfolio was made using TypeScript 
                     and Next.Js, its also full responsive. <span className={styles.highlight}>At the moment I'm looking 
                     forward to get an internship so I can improve and gain more experience from it.</span>
                   </p>
@@ -67,12 +67,17 @@ const Home: NextPage = () => {
               </div>
             </section>
             <section className={styles.Projects} id='Projects'>
-              <div className={`${styles.ProjectTitle} ${styles.Title}`}>
-              <span >Projects</span>
-              </div>
+              <h2 className={styles.Title}>Projects</h2>
               <div className={styles.ProjectsField}>
                 <div className={styles.Project}>
-                  <Image src={p1} className={styles.ProjectI}></Image>
+                  <Image src={p1} className={styles.ProjectI} alt="Project 1 Example Picture"></Image>
+                  <div className={styles.ProjectText}>
+                   <span className={styles.ProjectTitle}>Portfolio-v1</span>
+                   <i className={`fa fa-github ${styles.ProjectLogo}`}></i>
+                  </div>
+                </div>
+                <div className={styles.Project}>
+                  <Image src={p1} className={styles.ProjectI} alt="Project 1 Example Picture"></Image>
                   <div className={styles.ProjectText}>
                    <span className={styles.ProjectTitle}>Portfolio-v1</span>
                    <i className={`fa fa-github ${styles.ProjectLogo}`}></i>
@@ -81,7 +86,7 @@ const Home: NextPage = () => {
               </div>
             </section>
             <section className={styles.Contact} id='Contact'>
-
+              <h2 className={styles.Title}>Contact</h2>
             </section>
           </main>
         </div>
