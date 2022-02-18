@@ -40,20 +40,20 @@ const Home: NextPage = () => {
                 </div>
                 <div className={styles.AboutText}>
                   <p>
-                    Greetings! My name is Luiz and I'm a 20 years old software engineer student at
-                    <a className={styles.highlight} href='https://www.univates.br/' target='_blank'> Univates</a>,
+                    Greetings! My name is Luiz and I&apos;m a 20 years old software engineer student at
+                    <a className={styles.highlight} href={'https://www.univates.br/'} target="_blank" rel="noreferrer"> Univates</a>,
                     I began learning how to code in the first half of 2020, when i joined Univates.
                     The first coding language I learned there was Java, where I gained an understanding
-                    of variables, loops, arrays, classes, inheritance, ... 
+                    of variables, loops, arrays, classes, inheritance, ...
                   </p>
                   <p>  
-                    I started studying JavaScript, HTML and CSS by my own in the middle of 2021, now I'm 
+                    I started studying JavaScript, HTML and CSS by my own in the middle of 2021, now I&apos;m 
                     mostly focused in learning TypeScript, in fact this whole portfolio was made using TypeScript 
-                    and Next.Js, its also full responsive. <span className={styles.highlight}>At the moment I'm looking 
+                    and Next.Js, its also full responsive. <span className={styles.highlight}>At the moment I&apos;m looking 
                     forward to get an internship so I can improve and gain more experience from it.</span>
                   </p>
                   <p>
-                    Some languages and frameworks that I'm currently using/learning:
+                    Some languages and frameworks that I&apos;m currently using/learning:
                   </p>
                   <ul className={styles.TechSkills}>
                     <li>TypeScript</li>
@@ -70,14 +70,6 @@ const Home: NextPage = () => {
               <h2 className={styles.Title}>Projects</h2>
               <div className={styles.ProjectsField}>
                 <div className={styles.Project}>
-                  <Image src={p1} className={styles.ProjectI} alt="Project 1 Example Picture"></Image>
-                  <div className={styles.ProjectText}>
-                   <span className={styles.ProjectTitle}>Portfolio-v1</span>
-                   <i className={`fa fa-github ${styles.ProjectLogo}`}></i>
-                  </div>
-                </div>
-                <div className={styles.Project}>
-                  <Image src={p1} className={styles.ProjectI} alt="Project 1 Example Picture"></Image>
                   <div className={styles.ProjectText}>
                    <span className={styles.ProjectTitle}>Portfolio-v1</span>
                    <i className={`fa fa-github ${styles.ProjectLogo}`}></i>
@@ -87,6 +79,9 @@ const Home: NextPage = () => {
             </section>
             <section className={styles.Contact} id='Contact'>
               <h2 className={styles.Title}>Contact</h2>
+              <div className={styles.Social}>
+
+              </div>
             </section>
           </main>
         </div>
