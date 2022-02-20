@@ -70,6 +70,7 @@ const Home: NextPage = () => {
               <h2 className={styles.Title}>Projects</h2>
               <div className={styles.ProjectsField}>
                 <div className={styles.Project}>
+                  <a className={styles.Link} href='https://github.com/LuiKroth/portfolio-v1' target="_blank" rel="noreferrer"></a>
                   <div className={styles.ProjectText}>
                    <span className={styles.ProjectTitle}>Portfolio-v1</span>
                    <i className={`fa fa-github ${styles.ProjectLogo}`}></i>
