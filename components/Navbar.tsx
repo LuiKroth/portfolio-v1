@@ -12,14 +12,17 @@ class NavBar extends React.Component<{}, any> {
     }
     componentDidMount() {
       window.addEventListener('scroll', this.handleScroll);
-      document.getElementById('hamburgerMenu')!.addEventListener('click',this.toggleClassMenu)
+      document.getElementById('hamMenu')!.addEventListener('click',this.toggleClassMenu);
+      Array.from(document.getElementsByClassName('link')).forEach((link) => {
+        link.addEventListener('click',this.sideBarOnClick)
+      })
     }
     componentWillUnmount() {
       window.removeEventListener('scroll', this.handleScroll);
     }
   
     handleScroll = () => {
-      let buttonId = document.getElementById('hamburgerMenu');
+      let buttonId = document.getElementById('hamMenu');
       if (!buttonId!.classList.contains(styles.open)){
         this.setState({
           scrollPos: document.body.getBoundingClientRect().top,
@@ -29,26 +32,31 @@ class NavBar extends React.Component<{}, any> {
     };
     
     toggleClassMenu = () => {
-      let buttonId = document.getElementById('hamburgerMenu');
+      let buttonId = document.getElementById('hamMenu');
       let ham = document.getElementById('Ham');
       let sideBar = document.getElementById('sideBar');
 
       if (!buttonId!.classList.contains(styles.open)) {
-        buttonId!.classList.add(styles.open)
+        buttonId!.classList.add(styles.open);
       } else {
-        buttonId!.classList.remove(styles.open)
+        buttonId!.classList.remove(styles.open);
       }
 
       if (ham!.classList.contains(styles.HamHidden) && buttonId!.classList.contains(styles.open)) {
-        ham!.classList.add(styles.HamButton)
-        ham!.classList.remove(styles.HamHidden)
+        ham!.classList.add(styles.HamButton);
+        ham!.classList.remove(styles.HamHidden);
       }
 
       if (buttonId!.classList.contains(styles.open)) {
-        sideBar!.classList.add(styles.openSlide)
+        sideBar!.classList.add(styles.openSlide);
       } else {
-        sideBar!.classList.remove(styles.openSlide)
+        sideBar!.classList.remove(styles.openSlide);
       }
+    }
+    
+    sideBarOnClick = () => {
+      document.getElementById('sideBar')!.classList.remove(styles.openSlide);
+      document.getElementById('hamMenu')!.classList.remove(styles.open);
     }
 
     render() {
@@ -63,7 +71,7 @@ class NavBar extends React.Component<{}, any> {
             </nav>
             <button className={this.state.show ? styles.HamButton : styles.HamHidden} id='Ham'>
               <div className={styles.HamIcon}>
-                <div className={styles.HamBars} id='hamburgerMenu'>
+                <div className={styles.HamBars} id='hamMenu'>
                   <span></span>
                   <span></span>
                   <span></span>
@@ -71,15 +79,15 @@ class NavBar extends React.Component<{}, any> {
                 </div>
               </div>
             </button>
-            <nav className={styles.sideNav} id='sideBar'>
+            <aside className={styles.sideNav} id='sideBar'>
                 <ul>
-                  <li><a href={'#AboutMe'}>About Me</a></li>
-                  <li><a href={'#Projects'}>Projects</a></li>
-                  <li><a href={'#Contact'}>Contact</a></li>
+                  <li><a href={'#AboutMe'} className='link'>About Me</a></li>
+                  <li><a href={'#Projects'} className='link'>Projects</a></li>
+                  <li><a href={'#Contact'} className='link'>Contact</a></li>
                 </ul>
-            </nav>
+            </aside>
         </header>
-        )
+        );
     }
   }
 
