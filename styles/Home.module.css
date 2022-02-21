@@ -38,6 +38,9 @@
   z-index: 9999;
   background-color: transparent;
   transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
   user-select: none;
 }
 
@@ -54,11 +57,17 @@
   background-color: #222222;
   box-shadow: 0 20px 40px -10px #000;
   transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
   user-select: none;
 }
 
 .headerEffectOnScroll {
   transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
 }
 
 .navB {
@@ -70,6 +79,9 @@
   -moz-box-align: center;
   -moz-box-pack: justify;
   transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
 }
 
 .active {
@@ -98,6 +110,9 @@
 .active ul a:hover {
   color: #fd648a;
   transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
 }
 
 .hidden ul {
@@ -321,6 +336,9 @@
 .Project:hover .ProjectText .ProjectLogo {
   color: #DA0037;
   transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
 }
 
 .Link {
