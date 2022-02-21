@@ -283,7 +283,7 @@
 .Project {
   display: inline-block;
   position: relative;
-  background-image: url('../public/p1.png');
+  background-image: url('https://raw.githubusercontent.com/LuiKroth/portfolio-v1/main/public/p1.png');
   background-repeat: no-repeat;
   background-size: contain;
   height: 0;

@@ -57,7 +57,7 @@ const Home: NextPage = () => {
                     and <a className={styles.highlight}>Next.Js</a>, its also full responsive.
                   </p>
                   <p>
-                    Some programming <a className={styles.highlight}>languages</a> and <a className={styles.highlight}>technologies</a> that I&apos;m currently using/learning:
+                     Some <a className={styles.highlight}>programming languages</a> and <a className={styles.highlight}>technologies</a> that I&apos;m currently using/learning:
                   </p>
                   <ul className={styles.TechSkills}>
                     <li>TypeScript</li>
