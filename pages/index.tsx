@@ -86,7 +86,7 @@ const Home: NextPage = () => {
               <div className={`${styles.mainText} ${styles.Social}`}>
                 <h1>
                   <p>Want to talk?</p>
-                  <p>I&apos;m currently searching for internships and jobs oportunities!</p>
+                  <p>I&apos;m currently looking for internship oportunities!</p>
                 </h1>
                 <a href='mailto:luiz.kroth1@universo.univates.br' target="_blank" rel="noreferrer" className={styles.sendMessage}>
                   <b><p>Send me a message!</p></b>
