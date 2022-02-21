@@ -17,7 +17,7 @@
 }
 
 .content {
-  font-family: 'Pavanam';
+  font-family: 'Pavanam', sans-serif;
   height: 100%;
 }
 
@@ -200,7 +200,7 @@
   display: flex;
   height: 290px;
   width: clamp(100px, 24vw, 300px);
-  margin: 0 auto;
+  margin: 0 auto 300px auto;
   padding: 10px 10px;
   border-radius: 0px;
   border: 1px solid #EDEDED;
@@ -343,8 +343,56 @@
 .Contact {
   display: flex;
   width: 100%;
-  min-height: 50vh;
+  min-height: 83vh;
   flex-direction: column;
+}
+
+.Social {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column;
+}
+
+.Social h1 p {
+  margin: 15px;
+}
+
+.Social h1 p:nth-child(1) {
+  font-size: 50px;
+  font-family: 'Pavanam', sans-serif;
+  color: #DA0037;
+  font-style: italic;
+}
+
+.Social h1 p:nth-child(2){
+  font-size: 20px;
+}
+
+.sendMessage {
+  border: 1px solid #EDEDED;
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 20px;
+  padding: 0 15px;
+  background-color: #222222;
+  transition: .15s ease-in-out;
+  -o-transition: .15s ease-in-out;
+  -webkit-transition: .15s ease-in-out;
+  -moz-transition: .15s ease-in-out;
+}
+
+.sendMessage:hover {
+  background-color: #EDEDED;
+  color: #171717;
+  transition: .15s ease-in-out;
+  -o-transition: .15s ease-in-out;
+  -webkit-transition: .15s ease-in-out;
+  -moz-transition: .15s ease-in-out;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -355,6 +403,7 @@
   .AboutPicture {
     width: 200px;
     height: auto;
+    margin-bottom: 0;
   }
   .AboutText {
     margin: 0 auto;
@@ -378,7 +427,7 @@
     padding: 15px;
     z-index: 9999;
     right: 0%;
-    transition: 0.5s ease-in-out;
+    transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
@@ -477,7 +526,7 @@
   display: flex;
   position: absolute;
   width: 70vw;
-  height: 115vh;
+  height: 100vh;
   align-items: center;
   top: 0;
   right: -100vw;
@@ -493,20 +542,19 @@
   display: block;
   position: relative;
   list-style: none;
-  margin: 0 auto;
+  padding-left: 30px;
   font-family: 'Pavanam', sans-serif;
   font-size: clamp(30px, 10vw, 100px);
-  justify-items: center;
-  text-align: center;
 }
 
 .sideNav ul li {
-  display: block;
+  display: flex;
   color: #DA0037;
   background-color: #171717;
   border-radius: 60px;
   margin: 10px 0;
-  width: 60vw;
+  width: 50vw;
+  justify-content: center;
   transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;
   -webkit-transition: .3s ease-in-out;

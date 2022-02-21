@@ -4,7 +4,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import test1 from '../public/test1.jpg'
-import p1 from '../public/p1.png'
 import React from 'react'
 import NavBar from '../components/Navbar'
 
@@ -26,13 +25,12 @@ const Home: NextPage = () => {
                 <h1>
                   <p className={styles.salution}> Hello there, my name is</p>
                   <p className={styles.name}>Luiz Kroth.</p>
-                  <p className={styles.work}> I ‘m a Software Engineer Student.</p>
-                  <p className={styles.who}>I’m a brazilian software engineer student at Univates.</p>
+                  <p className={styles.work}> I &apos;m a Software Engineer Student.</p>
+                  <p className={styles.who}>I&apos;m a brazilian software engineer student at Univates.</p>
                 </h1>
               </div>
             </section>
             <section className={styles.AboutMe} id='AboutMe'>
-              {/* mudar o estilo do titulo. */}
               <h2 className={styles.Title}>About Me</h2>
               <div className={styles.Resume}>
                 <div className={styles.AboutPicture}>
@@ -40,24 +38,30 @@ const Home: NextPage = () => {
                 </div>
                 <div className={styles.AboutText}>
                   <p>
-                    Greetings! My name is Luiz and I&apos;m a 20 years old software engineer student at
+                  <a className={styles.highlight}>Greetings!</a> My name is <a className={styles.highlight}>Luiz</a> and I&apos;m a 20 years old software engineer student at
                     <a className={styles.highlight} href={'https://www.univates.br/'} target="_blank" rel="noreferrer"> Univates</a>,
                     I began learning how to code in the first half of 2020, when i joined Univates.
-                    The first coding language I learned there was Java, where I gained an understanding
+                    The first coding language I learned there was <a className={styles.highlight}>Java</a>, where I gained an understanding
                     of variables, loops, arrays, classes, inheritance, ...
                   </p>
                   <p>  
-                    I started studying JavaScript, HTML and CSS by my own in the middle of 2021, now I&apos;m 
-                    mostly focused in learning TypeScript, in fact this whole portfolio was made using TypeScript 
-                    and Next.Js, its also full responsive. <span className={styles.highlight}>At the moment I&apos;m looking 
-                    forward to get an internship so I can improve and gain more experience from it.</span>
+                    Even tough I&apos;m Brazilian my <a className={styles.highlight}>first language</a> was actually <a className={styles.highlight}>spanish</a> (my father got 
+                    transferred to <a className={styles.highlight}>Ecuador</a> when I was 4 and we came back 2 years later). With <a className={styles.highlight}>11 years </a>
+                    old I started learning <a className={styles.highlight}>english</a>, today is probably my <a className={styles.highlight}>most useful resource</a>, for <a className={styles.highlight}>researching </a> 
+                    things and also for my own <a className={styles.highlight}>entertainment</a>,<a className={styles.highlight}> at least 80% of the content I consume today is 
+                    in english.</a>
+                  </p>
+                  <p>  
+                    I started studying <a className={styles.highlight}>JavaScript</a>, <a className={styles.highlight}>HTML</a> and <a className={styles.highlight}>CSS </a> by my own in the middle of 2021, now I&apos;m 
+                    mostly focused in learning <a className={styles.highlight}>TypeScript</a>, in fact this whole portfolio was made using <a className={styles.highlight}>TypeScript </a> 
+                    and <a className={styles.highlight}>Next.Js</a>, its also full responsive.
                   </p>
                   <p>
-                    Some languages and frameworks that I&apos;m currently using/learning:
+                    Some programming <a className={styles.highlight}>languages</a> and <a className={styles.highlight}>technologies</a> that I&apos;m currently using/learning:
                   </p>
                   <ul className={styles.TechSkills}>
                     <li>TypeScript</li>
-                    <li>Java</li>
+                    <li>Linux (Debian 11)</li>
                     <li>Next.Js</li>
                     <li>React</li>
                     <li>Python</li>
@@ -79,14 +83,18 @@ const Home: NextPage = () => {
               </div>
             </section>
             <section className={styles.Contact} id='Contact'>
-              <h2 className={styles.Title}>Contact</h2>
-              <div className={styles.Social}>
-
+              <div className={`${styles.mainText} ${styles.Social}`}>
+                <h1>
+                  <p>Want to talk?</p>
+                  <p>I&apos;m currently searching for internships and jobs oportunities!</p>
+                </h1>
+                <a href='mailto:luiz.kroth1@universo.univates.br' target="_blank" rel="noreferrer" className={styles.sendMessage}>
+                  <b><p>Send me a message!</p></b>
+                </a>
               </div>
             </section>
           </main>
         </div>
-        <footer></footer>
       </div>
     </div>
   )
