@@ -350,12 +350,13 @@
 .Social {
   display: flex;
   height: 500px;
-  width: 100%;
+  width: fit-content;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-flow: column;
+  border: 1px solid #EDEDED;
 }
 
 .Social h1 p {
@@ -371,6 +372,7 @@
 
 .Social h1 p:nth-child(2){
   font-size: 20px;
+  color: #444444;
 }
 
 .sendMessage {
@@ -379,6 +381,7 @@
   font-style: italic;
   margin-top: 20px;
   padding: 0 15px;
+  color: #EDEDED;
   background-color: #222222;
   transition: .15s ease-in-out;
   -o-transition: .15s ease-in-out;
