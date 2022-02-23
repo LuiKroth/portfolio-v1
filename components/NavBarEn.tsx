@@ -68,6 +68,14 @@ class NavBar extends React.Component<{}, any> {
                 <li><a href={'#Projects'}>Projects</a></li>
                 <li><a href={'#Contact'}>Contact</a></li>
               </ul>
+              <div className={styles.dropdown}>
+                <button className={styles.dropdownBtn}>
+                  English
+                </button>
+                <div className={`${styles.dropdownContent} ${this.state.scrollPos == 0 ? styles.dropdown0y : ''}`}>
+                  <a href="https://www.luizkroth.com/pt-BR">Português</a>
+                </div>
+              </div>
             </nav>
             <button className={this.state.show ? styles.HamButton : styles.HamHidden} id='Ham'>
               <div className={styles.HamIcon}>

@@ -62,12 +62,20 @@ class NavBar extends React.Component<{}, any> {
       return (
         <header className={`${this.state.scrollPos == 0 ? styles.header : styles.headerScroll} ${!this.state.show && window.innerWidth > 800 ? styles.hidden : styles.headerEffectOnScroll }`}>
           <nav className = {`${styles.navB} ${this.state.show ? styles.active : styles.hidden}`}>
-              <ul>
-                <li><a href={'#AboutMe'}>Sobre Mim</a></li>
-                <li><a href={'#Projects'}>Projetos</a></li>
-                <li><a href={'#Contact'}>Contato</a></li>
-              </ul>
-            </nav>
+            <ul>
+              <li><a href={'#AboutMe'}>Sobre Mim</a></li>
+              <li><a href={'#Projects'}>Projetos</a></li>
+              <li><a href={'#Contact'}>Contato</a></li>
+            </ul>
+            <div className={styles.dropdown}>
+              <button className={styles.dropdownBtn}>
+                Português
+              </button>
+              <div className={`${styles.dropdownContent} ${this.state.scrollPos == 0 ? styles.dropdown0y : ''}`}>
+                <a href="https://www.luizkroth.com/en-US">English</a>
+              </div>
+            </div>
+          </nav>
             <button className={this.state.show ? styles.HamButton : styles.HamHidden} id='Ham'>
               <div className={styles.HamIcon}>
                 <div className={styles.HamBars} id='hamMenu'>
@@ -79,11 +87,11 @@ class NavBar extends React.Component<{}, any> {
               </div>
             </button>
             <aside className={styles.sideNav} id='sideBar'>
-                <ul>
-                  <li><a href={'#AboutMe'} className='link'>Sobre Mim</a></li>
-                  <li><a href={'#Projects'} className='link'>Projetos</a></li>
-                  <li><a href={'#Contact'} className='link'>Contato</a></li>
-                </ul>
+              <ul>
+                <li><a href={'#AboutMe'} className='link'>Sobre Mim</a></li>
+                <li><a href={'#Projects'} className='link'>Projetos</a></li>
+                <li><a href={'#Contact'} className='link'>Contato</a></li>
+              </ul>
             </aside>
         </header>
         );
