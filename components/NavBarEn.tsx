@@ -88,11 +88,19 @@ class NavBar extends React.Component<{}, any> {
               </div>
             </button>
             <aside className={styles.sideNav} id='sideBar'>
-                <ul>
-                  <li><a href={'#AboutMe'} className='link'>About Me</a></li>
-                  <li><a href={'#Projects'} className='link'>Projects</a></li>
-                  <li><a href={'#Contact'} className='link'>Contact</a></li>
-                </ul>
+              <ul>
+                <li><a href={'#AboutMe'} className='link'>About Me</a></li>
+                <li><a href={'#Projects'} className='link'>Projects</a></li>
+                <li><a href={'#Contact'} className='link'>Contact</a></li>
+              </ul>
+              <div className={styles.dropdownAside}>
+              <button className={styles.dropdownBtn}>
+                Portuguese
+              </button>
+              <div className={styles.dropdownContent}>
+                <a href="https://www.luizkroth.com/en-US">English</a>
+              </div>
+            </div>
             </aside>
         </header>
         );

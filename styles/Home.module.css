@@ -396,14 +396,6 @@
   -moz-transition: .25s ease-in-out;
 }
 
-.Link {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-  top: 0;
-}
-
 .Title {
   display: block;
   color: #DA0037;
@@ -681,10 +673,53 @@
   margin-top: 10px;
 }
 
+.Link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  top: 0;
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdownAside {
+  display: flex;
+  position: absolute;
+  bottom: 15vh;
+  width: 60vw;  
+  justify-content: center;
+}
+
+.dropdownContent {
+  font-size: 26px;
+}
+
+.dropdownBtn {
+  width: 75%;
+}
+
+.dropdownAside:hover .dropdownBtn {
+  border-bottom: none;
+}
+
+.dropdownAside:hover .dropdownContent{
+  display: block;
+  position: absolute;
+  border: 1px solid #EDEDED;
+  border-top: none;
+  margin-top: 60px;
+  width: 75%;
+}
 }
 
 @media only screen and (max-width: 500px) {
   .Project {
     height: 176px;
+  }
+  .dropdownAside {
+    margin-left: 10px;
   }
 }

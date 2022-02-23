@@ -69,7 +69,7 @@ class NavBar extends React.Component<{}, any> {
             </ul>
             <div className={styles.dropdown}>
               <button className={styles.dropdownBtn}>
-                Português
+                Portuguese
               </button>
               <div className={`${styles.dropdownContent} ${this.state.scrollPos == 0 ? styles.dropdown0y : ''}`}>
                 <a href="https://www.luizkroth.com/en-US">English</a>
@@ -92,6 +92,14 @@ class NavBar extends React.Component<{}, any> {
                 <li><a href={'#Projects'} className='link'>Projetos</a></li>
                 <li><a href={'#Contact'} className='link'>Contato</a></li>
               </ul>
+              <div className={styles.dropdownAside}>
+                <button className={styles.dropdownBtn}>
+                  Portuguese
+                </button>
+                <div className={styles.dropdownContent}>
+                  <a href="https://www.luizkroth.com/en-US">English</a>
+                </div>
+              </div>
             </aside>
         </header>
         );
