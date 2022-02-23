@@ -95,10 +95,10 @@ class NavBar extends React.Component<{}, any> {
               </ul>
               <div className={styles.dropdownAside}>
               <button className={styles.dropdownBtn}>
-                Portuguese
+                English
               </button>
               <div className={styles.dropdownContent}>
-                <a href="https://www.luizkroth.com/en-US">English</a>
+                <a href="https://www.luizkroth.com/pt-BR">Português</a>
               </div>
             </div>
             </aside>
