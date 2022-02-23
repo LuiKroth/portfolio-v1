@@ -5,7 +5,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import test1 from '../public/test1.jpg'
 import React from 'react'
-import NavBar from '../components/NavBarPt'
+import NavBar from '../components/NavBarEn'
 
 const Home: NextPage = () => {
   return (
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
                   <p className={styles.salution}> Hello there, my name is</p>
                   <p className={styles.name}>Luiz Kroth.</p>
                   <p className={styles.work}> I &apos;m a Software Engineer Student.</p>
-                  <p className={styles.who}>I&apos;m a brazilian software engineer student at Univates.</p>
+                  <p className={styles.who}>I&apos;m a brazilian Software Engineer student at Univates.</p>
                 </h1>
               </div>
             </section>
@@ -38,8 +38,8 @@ const Home: NextPage = () => {
                 </div>
                 <div className={styles.AboutText}>
                   <p>
-                  <a className={styles.highlight}>Greetings!</a> My name is <a className={styles.highlight}>Luiz</a> and I&apos;m a 20 years old software engineer student at
-                    <a className={styles.highlight} href={'https://www.univates.br/'} target="_blank" rel="noreferrer"> Univates</a>.I&apos;ve developed some skills along my life and also along these 2 years of graduation. And now that the pandemic situation is under control I feel 
+                  <a className={styles.highlight}>Greetings!</a> My name is <a className={styles.highlight}>Luiz</a> and I&apos;m a 20 years old Software Engineer student at
+                    <a className={styles.highlight} href={'https://www.univates.br/'} target="_blank" rel="noreferrer"> Univates</a>. I&apos;ve developed some skills along my life and also along these 2 years of graduation. And now that the pandemic situation is under control I feel 
                     confortable looking for my first internship.
                     I began learning how to code in the first half of 2020, when i joined Univates.
                     The first coding language I learned there was <a className={styles.highlight}>Java</a>, where I gained an understanding

@@ -23,44 +23,44 @@ const PTBR: NextPage = () => {
             <section className={styles.main}>
               <div className={styles.mainText}>
                 <h1>
-                  <p className={styles.salution}> Hello there, my name is</p>
+                  <p className={styles.salution}> Oi, meu nome é</p>
                   <p className={styles.name}>Luiz Kroth.</p>
-                  <p className={styles.work}> I &apos;m a Software Engineer Student.</p>
-                  <p className={styles.who}>I&apos;m a brazilian software engineer student at Univates.</p>
+                  <p className={styles.work}> Eu sou um estudante de Engenharia de Software.</p>
+                  <p className={styles.who}>Eu sou um estudante Brasileiro de Engenharia de Software na Univates.</p>
                 </h1>
               </div>
             </section>
             <section className={styles.AboutMe} id='AboutMe'>
-              <h2 className={styles.Title}>About Me</h2>
+              <h2 className={styles.Title}>Sobre Mim</h2>
               <div className={styles.Resume}>
                 <div className={styles.AboutPicture}>
                   <Image src={test1} className={styles.ProfilePic} alt="High School Graduation 2019"></Image>
                 </div>
                 <div className={styles.AboutText}>
                   <p>
-                  <a className={styles.highlight}>Greetings!</a> My name is <a className={styles.highlight}>Luiz</a> and I&apos;m a 20 years old software engineer student at
-                    <a className={styles.highlight} href={'https://www.univates.br/'} target="_blank" rel="noreferrer"> Univates</a>.I&apos;ve developed some skills along my life and also along these 2 years of graduation. And now that the pandemic situation is under control I feel 
-                    confortable looking for my first internship.
-                    I began learning how to code in the first half of 2020, when i joined Univates.
-                    The first coding language I learned there was <a className={styles.highlight}>Java</a>, where I gained an understanding
-                    of variables, loops, arrays, classes, inheritance, ...
+                  <a className={styles.highlight}>Saudações!</a> Meu nome é <a className={styles.highlight}>Luiz</a>, tenho <a className={styles.highlight}>20 anos</a> e atualmente estou me graduando em Engenharia de Software na
+                    <a className={styles.highlight} href={'https://www.univates.br/'} target="_blank" rel="noreferrer"> Univates</a>. Durante esses dois anos me dediquei exclusivamente aos meus estudos, 
+                    e agora que a situação da pandemia está sob controle sinto que é a hora de obter experiência prática em procurar pelo meu primeiro estágio. 
+                    Eu comecei a aprender a programar no primeiro semestre de 2020, quando entrei na Univates.
+                    A primeira linguagem que aprendi lá foi <a className={styles.highlight}>Java</a>, quando ganhei conhecimento sobre
+                    variáveis, loops, arrays, classes, herança, ...
                   </p>
                   <p>  
-                    In the middle of 2021 I started studying <a className={styles.highlight}>JavaScript</a>, <a className={styles.highlight}>HTML</a> and <a className={styles.highlight}>CSS </a> by my own, and 
-                    now I&apos;m currently learning <a className={styles.highlight}>TypeScript</a>, in fact this whole portfolio was made using <a className={styles.highlight}>TypeScript </a> 
-                    and <a className={styles.highlight}>Next.Js</a>, its also full <a className={styles.highlight}>responsive</a>.
+                    Na metade de 2021 comecei a estudar por conta própria <a className={styles.highlight}>JavaScript</a>, <a className={styles.highlight}>HTML</a> e <a className={styles.highlight}>CSS </a>, 
+                    e atualmente estou aprendendo <a className={styles.highlight}>TypeScript</a>, inclusive este portfolio inteiro foi escrito utilizando <a className={styles.highlight}>TypeScript </a> 
+                    e <a className={styles.highlight}>Next.Js</a>, e possui um design completamente <a className={styles.highlight}>responsivo</a>.
                   </p>
                   <p>  
-                    Since young I&apos;ve <a className={styles.highlight}>experienced</a> big changes, when I was 4 years old my father got transfered to <a className={styles.highlight}>Ecuador</a>, there I studied in two different schools,<a className={styles.highlight} href={'https://cotopaxi.k12.ec/'} target="_blank" rel="noreferrer"> Academia Cotopaxi International School</a> and <a className={styles.highlight} href={'https://sekquito.com/en/en-home/'} target="_blank" rel="noreferrer">SEK</a>, so my literacy happened in two different languages. 
-                    And even though I&apos;m not close to spanish language anymore, I study <a className={styles.highlight}>english</a> since always, and today it is probably my <a className={styles.highlight}>most useful resource</a>, for <a className={styles.highlight}>researching </a> 
-                    things and also for my own <a className={styles.highlight}>entertainment</a>,<a className={styles.highlight}> at least 80% of the content I consume today is 
-                    in english.</a>
+                    Desde pequeno venho me <a className={styles.highlight}>adaptando</a> a grandes mudanças, quando eu tinha 4 anos meu pai foi transferido para o <a className={styles.highlight}>Equador</a>, lá eu estudei em duas escolas diferentes,<a className={styles.highlight} href={'https://cotopaxi.k12.ec/'} target="_blank" rel="noreferrer"> Academia Cotopaxi International School</a> e <a className={styles.highlight} href={'https://sekquito.com/en/en-home/'} target="_blank" rel="noreferrer">SEK</a>, 
+                    então minha alfabetização ocorreu em 2 idiomas diferentes. 
+                    E mesmo eu não tendo mais contato com o espanhol, Eu estudo <a className={styles.highlight}>Inglês</a> desde sempre, e hoje é provavelmente <a className={styles.highlight}>meu recurso mais útil</a>, para <a className={styles.highlight}>pesquisar/estudar </a> 
+                    conteúdos e também para meu próprio <a className={styles.highlight}>entretenimento</a>,<a className={styles.highlight}> pelo menos 80% do conteúdo que consumo hoje em dia está em Inglês.</a>
                   </p>
                   <p>
-                    My will is to gain more <a className={styles.highlight}>experience</a> and <a className={styles.highlight}>knowledge</a> to desenvolve myself more and more, and there so, <a className={styles.highlight}>to contribute to the company&apos;s growth.</a>
+                    Meu foco agora é em ganhar mais <a className={styles.highlight}>experiência</a> e <a className={styles.highlight}>conhecimento</a> para me desenvolver cada vez mais, e para então, <a className={styles.highlight}>contribuir com o crescimento de empresas.</a>
                   </p>
                   <p>
-                     Some <a className={styles.highlight}>programming languages</a> and <a className={styles.highlight}>technologies</a> that I&apos;m currently using/learning:
+                     Algumas das <a className={styles.highlight}>linguagens de programação</a> e <a className={styles.highlight}>tecnologias</a> que estou usando/aprendendo atualmente:
                   </p>
                   <ul className={styles.TechSkills}>
                     <li>TypeScript</li>
@@ -74,7 +74,7 @@ const PTBR: NextPage = () => {
               </div>
             </section>
             <section className={styles.Projects} id='Projects'>
-              <h2 className={styles.Title}>Projects</h2>
+              <h2 className={styles.Title}>Projetos</h2>
               <div className={styles.ProjectsField}>
                 <div className={styles.Project}>
                   <a className={styles.Link} href='https://github.com/LuiKroth/portfolio-v1' target="_blank" rel="noreferrer"></a>
@@ -88,11 +88,11 @@ const PTBR: NextPage = () => {
             <section className={styles.Contact} id='Contact'>
               <div className={`${styles.mainText} ${styles.Social}`}>
                 <h1>
-                  <p>Want to talk?</p>
-                  <p>I&apos;m currently searching for internships and jobs oportunities!</p>
+                  <p>Quer conversar?</p>
+                  <p>Atualmente estou procurando por oportunidades de estágio!</p>
                 </h1>
                 <a href='mailto:luiz.kroth1@universo.univates.br' target="_blank" rel="noreferrer" className={styles.sendMessage}>
-                  <b><p>Send me a message!</p></b>
+                  <b><p>Mande uma mensagem!</p></b>
                 </a>
               </div>
             </section>
