@@ -215,7 +215,7 @@
   display: flex;
   height: 290px;
   width: clamp(100px, 24vw, 300px);
-  margin: 0 auto 300px auto;
+  margin: -100px auto 300px auto;
   padding: 10px 10px;
   border-radius: 0px;
   border: 1px solid #EDEDED;
@@ -262,8 +262,9 @@
     width: 100%;
     height: 70vh;
     flex-direction: column;
-}
-
+    margin-top: 30px;
+  }
+  
 .ProjectsField {
   display: grid;
   height: 80vh;
@@ -271,13 +272,6 @@
   margin-top: 30px;
   gap: 20px;
   justify-content: center;
-}
-
-.Projects hr {
-  width: 100%;
-  height: 2px;
-  margin-top: 3%;
-  text-align: center;
 }
 
 .Project {
@@ -425,7 +419,7 @@
   .AboutPicture {
     width: 200px;
     height: auto;
-    margin-bottom: 0;
+    margin: 0 auto 0 auto;
   }
   .AboutText {
     margin: 0 auto;
