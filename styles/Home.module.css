@@ -396,6 +396,14 @@
   -moz-transition: .25s ease-in-out;
 }
 
+.Link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  top: 0;
+}
+
 .Title {
   display: block;
   color: #DA0037;
@@ -671,14 +679,6 @@
 
 .ProjectTitle {
   margin-top: 10px;
-}
-
-.Link {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-  top: 0;
 }
 
 .dropdown {
