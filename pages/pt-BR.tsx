@@ -38,26 +38,26 @@ const PTBR: NextPage = () => {
                 </div>
                 <div className={styles.AboutText}>
                   <p>
-                  <a className={styles.highlight}>Saudações!</a> Meu nome é <a className={styles.highlight}>Luiz</a>, tenho <a className={styles.highlight}>20 anos</a> e atualmente estou me graduando em Engenharia de Software na
-                    <a className={styles.highlight} href={'https://www.univates.br/'} target="_blank" rel="noreferrer"> Univates</a>. Durante esses dois anos me dediquei exclusivamente aos meus estudos, 
-                    e agora que a situação da pandemia está sob controle sinto que é a hora de obter experiência prática em procurar pelo meu primeiro estágio. 
-                    Eu comecei a aprender a programar no primeiro semestre de 2020, quando entrei na Univates.
-                    A primeira linguagem que aprendi lá foi <a className={styles.highlight}>Java</a>, quando ganhei conhecimento sobre
+                  <a className={styles.highlight}>Saudações!</a> Meu nome é <a className={styles.highlight}>Luiz</a>, tenho <a className={styles.highlight}>20 anos</a> e atualmente estou cursando Engenharia de Software na
+                    <a className={styles.highlight} href={'https://www.univates.br/'} target="_blank" rel="noreferrer"> <u>Univates</u></a>, ingressei em 2020/1.  Durante esses dois anos me dediquei exclusivamente aos meus estudos, agora que me sinto seguro em relação à pandemia da COVID-19, é a hora de obter experiência prática, 
+                    então estou em busca pelo meu primeiro estágio. 
+                    Comecei a aprender a programar no primeiro semestre de 2020, quando entrei na Univates. 
+                    A primeira linguagem que aprendi foi <a className={styles.highlight}>Java</a>, quando ganhei conhecimento sobre
                     variáveis, loops, arrays, classes, herança, ...
                   </p>
                   <p>  
                     Na metade de 2021 comecei a estudar por conta própria <a className={styles.highlight}>JavaScript</a>, <a className={styles.highlight}>HTML</a> e <a className={styles.highlight}>CSS </a>, 
-                    e atualmente estou aprendendo <a className={styles.highlight}>TypeScript</a>, inclusive este portfolio inteiro foi escrito utilizando <a className={styles.highlight}>TypeScript </a> 
-                    e <a className={styles.highlight}>Next.Js</a>, e possui um design completamente <a className={styles.highlight}>responsivo</a>.
+                    e atualmente estou aprendendo <a className={styles.highlight}>TypeScript</a>, inclusive este portfolio foi escrito utilizando <a className={styles.highlight}>TypeScript </a> 
+                    e <a className={styles.highlight}>Next.Js</a>, e possui um design totalmente <a className={styles.highlight}>responsivo</a>.
                   </p>
                   <p>  
-                    Desde pequeno venho me <a className={styles.highlight}>adaptando</a> a grandes mudanças, quando eu tinha 4 anos meu pai foi transferido para o <a className={styles.highlight}>Equador</a>, lá eu estudei em duas escolas diferentes,<a className={styles.highlight} href={'https://cotopaxi.k12.ec/'} target="_blank" rel="noreferrer"> Academia Cotopaxi International School</a> e <a className={styles.highlight} href={'https://sekquito.com/en/en-home/'} target="_blank" rel="noreferrer">SEK</a>, 
-                    então minha alfabetização ocorreu em 2 idiomas diferentes. 
-                    E mesmo eu não tendo mais contato com o espanhol, Eu estudo <a className={styles.highlight}>Inglês</a> desde sempre, e hoje é provavelmente <a className={styles.highlight}>meu recurso mais útil</a>, para <a className={styles.highlight}>pesquisar/estudar </a> 
+                    Desde muito novo fui exposto a grandes mudanças e experiências, quando tinha 4 anos meu pai foi transferido para o <a className={styles.highlight}>Equador</a>, onde estudei em duas escolas diferentes,<a className={styles.highlight} href={'https://cotopaxi.k12.ec/'} target="_blank" rel="noreferrer"> <u>Academia Cotopaxi International School</u></a> e <a className={styles.highlight} href={'https://sekquito.com/en/en-home/'} target="_blank" rel="noreferrer"><u>SEK</u></a>, 
+                    então minha alfabetização ocorreu em 2 idiomas diferentes, inglês e espanhol. 
+                    Muito embora eu não seja mas familiarizado com a língua espanhola, estudo <a className={styles.highlight}>Inglês</a> desde sempre, e hoje é provavelmente <a className={styles.highlight}>meu recurso mais útil</a>, para <a className={styles.highlight}>pesquisar/estudar </a> 
                     conteúdos e também para meu próprio <a className={styles.highlight}>entretenimento</a>,<a className={styles.highlight}> pelo menos 80% do conteúdo que consumo hoje em dia está em Inglês.</a>
                   </p>
                   <p>
-                    Meu foco agora é em ganhar mais <a className={styles.highlight}>experiência</a> e <a className={styles.highlight}>conhecimento</a> para me desenvolver cada vez mais, e para então, <a className={styles.highlight}>contribuir com o crescimento de empresas.</a>
+                    Meu foco agora é em ganhar mais <a className={styles.highlight}>experiência</a> e <a className={styles.highlight}>conhecimento</a> para me desenvolver cada vez mais, e então, <a className={styles.highlight}>contribuir com o crescimento da empresa.</a>
                   </p>
                   <p>
                      Algumas das <a className={styles.highlight}>linguagens de programação</a> e <a className={styles.highlight}>tecnologias</a> que estou usando/aprendendo atualmente:
