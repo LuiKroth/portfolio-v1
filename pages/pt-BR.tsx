@@ -1,11 +1,11 @@
 
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import test1 from '../public/test1.jpg'
-import React from 'react'
-import NavBar from '../components/NavBarPt'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import profilePic from '../public/profilePic.jpg';
+import React from 'react';
+import NavBar from '../components/NavBarPt';
 
 const PTBR: NextPage = () => {
   return (
@@ -34,7 +34,7 @@ const PTBR: NextPage = () => {
               <h2 className={styles.Title}>Sobre Mim</h2>
               <div className={styles.Resume}>
                 <div className={styles.AboutPicture}>
-                  <Image src={test1} className={styles.ProfilePic} alt="High School Graduation 2019"></Image>
+                  <Image src={profilePic} className={styles.ProfilePic} alt="High School Graduation 2019"></Image>
                 </div>
                 <div className={styles.AboutText}>
                   <p>
@@ -83,6 +83,13 @@ const PTBR: NextPage = () => {
                    <i className={`fa fa-github ${styles.ProjectLogo}`}></i>
                   </div>
                 </div>
+                <div className={styles.Project}>
+                  <a className={styles.Link} href='https://github.com/LuiKroth/2dotSpot' target="_blank" rel="noreferrer"></a>
+                  <div className={styles.ProjectText}>
+                   <span className={styles.ProjectTitle}>2dotSpot (in progress)</span>
+                   <i className={`fa fa-github ${styles.ProjectLogo}`}></i>
+                  </div>
+                </div>
               </div>
             </section>
             <section className={styles.Contact} id='Contact'>
@@ -103,4 +110,4 @@ const PTBR: NextPage = () => {
   )
 };
 
-export default PTBR
+export default PTBR;

@@ -338,7 +338,6 @@
 .Project {
   display: inline-block;
   position: relative;
-  background-image: url('https://raw.githubusercontent.com/LuiKroth/portfolio-v1/main/public/p1.png');
   background-repeat: no-repeat;
   background-size: contain;
   height: 0;
@@ -350,6 +349,14 @@
   -o-transition: .2s ease-in-out;
   -moz-transition: .2s ease-in-out;
   user-select: none;
+}
+
+.Project:nth-child(1) {
+  background-image: url('../public/p1.png');
+}
+
+.Project:nth-child(2) {
+  background-image: url('../public/inProgress.png');
 }
 
 .Project:hover {
@@ -484,6 +491,11 @@
   }
   .AboutText {
     margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .Project:nth-child(2) .ProjectTitle {
+    font-size: 17px;
   }
 }
 

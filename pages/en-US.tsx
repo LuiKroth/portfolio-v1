@@ -1,11 +1,11 @@
 
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import test1 from '../public/test1.jpg'
-import React from 'react'
-import NavBar from '../components/NavBarEn'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import profilePic from '../public/profilePic.jpg';
+import React from 'react';
+import NavBar from '../components/NavBarEn';
 
 const Home: NextPage = () => {
   return (
@@ -34,12 +34,12 @@ const Home: NextPage = () => {
               <h2 className={styles.Title}>About Me</h2>
               <div className={styles.Resume}>
                 <div className={styles.AboutPicture}>
-                  <Image src={test1} className={styles.ProfilePic} alt="High School Graduation 2019"></Image>
+                  <Image src={profilePic} className={styles.ProfilePic} alt="High School Graduation 2019"></Image>
                 </div>
                 <div className={styles.AboutText}>
                   <p>
                   <a className={styles.highlight}>Greetings!</a> My name is <a className={styles.highlight}>Luiz</a> and I&apos;m a 20 years old Software Engineer student at
-                    <a className={styles.highlight} href={'https://www.univates.br/'} target="_blank" rel="noreferrer"> Univates</a>. I&apos;ve developed some skills along my life and also along these 2 years of graduation. And now that the pandemic situation is under control I feel 
+                    <a className={styles.highlight} href={'https://www.univates.br/'} target="_blank" rel="noreferrer"> <u>Univates</u></a>. I&apos;ve developed some skills along my life and also along these 2 years of graduation. And now that the pandemic situation is under control I feel 
                     confortable looking for my first internship.
                     I began learning how to code in the first half of 2020, when i joined Univates.
                     The first coding language I learned there was <a className={styles.highlight}>Java</a>, where I gained an understanding
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
                     and <a className={styles.highlight}>Next.Js</a>, its also full <a className={styles.highlight}>responsive</a>.
                   </p>
                   <p>  
-                    Since young I&apos;ve <a className={styles.highlight}>experienced</a> big changes, when I was 4 years old my father got transfered to <a className={styles.highlight}>Ecuador</a>, there I studied in two different schools,<a className={styles.highlight} href={'https://cotopaxi.k12.ec/'} target="_blank" rel="noreferrer"> Academia Cotopaxi International School</a> and <a className={styles.highlight} href={'https://sekquito.com/en/en-home/'} target="_blank" rel="noreferrer">SEK</a>, so my literacy happened in two different languages. 
+                    Since young I&apos;ve <a className={styles.highlight}>experienced</a> big changes, when I was 4 years old my father got transfered to <a className={styles.highlight}>Ecuador</a>, there I studied in two different schools,<a className={styles.highlight} href={'https://cotopaxi.k12.ec/'} target="_blank" rel="noreferrer"> <u>Academia Cotopaxi International School</u></a> and <a className={styles.highlight} href={'https://sekquito.com/en/en-home/'} target="_blank" rel="noreferrer"> <u>SEK</u></a>, so my literacy happened in two different languages. 
                     And even though I&apos;m not close to spanish language anymore, I study <a className={styles.highlight}>english</a> since always, and today it is probably my <a className={styles.highlight}>most useful resource</a>, for <a className={styles.highlight}>researching </a> 
                     things and also for my own <a className={styles.highlight}>entertainment</a>,<a className={styles.highlight}> at least 80% of the content I consume today is 
                     in english.</a>
@@ -83,6 +83,13 @@ const Home: NextPage = () => {
                    <i className={`fa fa-github ${styles.ProjectLogo}`}></i>
                   </div>
                 </div>
+                <div className={styles.Project}>
+                  <a className={styles.Link} href='https://github.com/LuiKroth/2dotSpot' target="_blank" rel="noreferrer"></a>
+                  <div className={styles.ProjectText}>
+                   <span className={styles.ProjectTitle}>2dotSpot (in progress)</span>
+                   <i className={`fa fa-github ${styles.ProjectLogo}`}></i>
+                  </div>
+                </div>
               </div>
             </section>
             <section className={styles.Contact} id='Contact'>
@@ -103,4 +110,4 @@ const Home: NextPage = () => {
   )
 };
 
-export default Home
+export default Home;
