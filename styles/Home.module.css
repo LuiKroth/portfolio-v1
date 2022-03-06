@@ -352,11 +352,11 @@
 }
 
 .Project:nth-child(1) {
-  background-image: url('../public/p1.png');
+  background-image: url('https://github.com/LuiKroth/portfolio-v1/blob/main/public/p1.png?raw=true');
 }
 
 .Project:nth-child(2) {
-  background-image: url('../public/inProgress.png');
+  background-image: url('https://github.com/LuiKroth/portfolio-v1/blob/main/public/inProgress.png?raw=true');
 }
 
 .Project:hover {
