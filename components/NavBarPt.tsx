@@ -75,6 +75,15 @@ class NavBar extends React.Component<{}, any> {
                 <a href="https://www.luizkroth.com/en-US">English</a>
               </div>
             </div>
+            <div className={styles.dropdown}>
+                <button className={styles.dropdownBtn}>
+                  Currículo PDF
+                </button>
+                <div className={`${styles.dropdownContent} ${this.state.scrollPos == 0 ? styles.dropdown0y : ''}`}>
+                  <a href="/Resume English Luiz Eduardo Kroth.pdf" target="_blank" rel="noopener noreferrer">English</a>
+                  <a href="/Resume Portugues Luiz Eduardo Kroth.pdf" target="_blank" rel="noopener noreferrer">Português</a>        
+                </div>
+              </div>
           </nav>
             <button className={this.state.show ? styles.HamButton : styles.HamHidden} id='Ham'>
               <div className={styles.HamIcon}>

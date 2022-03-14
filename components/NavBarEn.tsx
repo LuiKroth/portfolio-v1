@@ -76,6 +76,15 @@ class NavBar extends React.Component<{}, any> {
                   <a href="https://www.luizkroth.com/pt-BR">Português</a>
                 </div>
               </div>
+              <div className={styles.dropdown}>
+                <button className={styles.dropdownBtn}>
+                  Resume
+                </button>
+                <div className={`${styles.dropdownContent} ${this.state.scrollPos == 0 ? styles.dropdown0y : ''}`}>
+                    <a href="/Resume English Luiz Eduardo Kroth.pdf" target="_blank" rel="noopener noreferrer">English</a>
+                    <a href="/Resume Portugues Luiz Eduardo Kroth.pdf" target="_blank" rel="noopener noreferrer">Português</a>        
+                </div>
+              </div>
             </nav>
             <button className={this.state.show ? styles.HamButton : styles.HamHidden} id='Ham'>
               <div className={styles.HamIcon}>
@@ -94,13 +103,13 @@ class NavBar extends React.Component<{}, any> {
                 <li><a href={'#Contact'} className='link'>Contact</a></li>
               </ul>
               <div className={styles.dropdownAside}>
-              <button className={styles.dropdownBtn}>
-                English
-              </button>
-              <div className={styles.dropdownContent}>
-                <a href="https://www.luizkroth.com/pt-BR">Português</a>
+                <button className={styles.dropdownBtn}>
+                  English
+                </button>
+                <div className={styles.dropdownContent}>
+                  <a href="https://www.luizkroth.com/pt-BR">Português</a>
+                </div>
               </div>
-            </div>
             </aside>
         </header>
         );
