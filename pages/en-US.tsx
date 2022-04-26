@@ -83,13 +83,6 @@ const Home: NextPage = () => {
                    <i className={`fa fa-github ${styles.ProjectLogo}`}></i>
                   </div>
                 </div>
-                <div className={styles.Project}>
-                  <a className={styles.Link} href='https://github.com/LuiKroth/2dotSpot' target="_blank" rel="noreferrer"></a>
-                  <div className={styles.ProjectText}>
-                   <span className={styles.ProjectTitle}>2dotSpot (in progress)</span>
-                   <i className={`fa fa-github ${styles.ProjectLogo}`}></i>
-                  </div>
-                </div>
               </div>
             </section>
             <section className={styles.Contact} id='Contact'>
