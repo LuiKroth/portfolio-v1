@@ -46,11 +46,6 @@ const Home: NextPage = () => {
                     of variables, loops, arrays, classes, inheritance, ...
                   </p>
                   <p>  
-                    In the middle of 2021 I started studying <a className={styles.highlight}>JavaScript</a>, <a className={styles.highlight}>HTML</a> and <a className={styles.highlight}>CSS </a> by my own, and 
-                    now I&apos;m currently learning <a className={styles.highlight}>TypeScript</a>, in fact this whole portfolio was made using <a className={styles.highlight}>TypeScript </a> 
-                    and <a className={styles.highlight}>Next.Js</a>, its also full <a className={styles.highlight}>responsive</a>.
-                  </p>
-                  <p>  
                     Since young I&apos;ve <a className={styles.highlight}>experienced</a> big changes, when I was 4 years old my father got transfered to <a className={styles.highlight}>Ecuador</a>, there I studied in two different schools,<a className={styles.highlight} href={'https://cotopaxi.k12.ec/'} target="_blank" rel="noreferrer"> <u>Academia Cotopaxi International School</u></a> and <a className={styles.highlight} href={'https://sekquito.com/en/en-home/'} target="_blank" rel="noreferrer"> <u>SEK</u></a>, so my literacy happened in two different languages. 
                     And even though I&apos;m not close to spanish language anymore, I study <a className={styles.highlight}>english</a> since always, and today it is probably my <a className={styles.highlight}>most useful resource</a>, for <a className={styles.highlight}>researching </a> 
                     things and also for my own <a className={styles.highlight}>entertainment</a>,<a className={styles.highlight}> at least 80% of the content I consume today is 
@@ -63,12 +58,12 @@ const Home: NextPage = () => {
                      Some <a className={styles.highlight}>programming languages</a> and <a className={styles.highlight}>technologies</a> that I&apos;m currently using/learning:
                   </p>
                   <ul className={styles.TechSkills}>
-                    <li>TypeScript</li>
-                    <li>Linux (Debian 11)</li>
-                    <li>Next.Js</li>
-                    <li>React</li>
                     <li>Python</li>
-                    <li>PostgreSQL</li>
+                    <li>Linux (Debian 11)</li>
+                    <li>Databricks</li>
+                    <li>Pandas</li>
+                    <li>MySQL</li>
+                    <li>Apache Spark</li>
                   </ul>
                 </div>
               </div>
