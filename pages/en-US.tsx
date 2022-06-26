@@ -25,7 +25,8 @@ const Home: NextPage = () => {
                 <h1>
                   <p className={styles.salution}> Hello there, my name is</p>
                   <p className={styles.name}>Luiz Kroth.</p>
-                  <p className={styles.work}> I &apos;m a Software Engineering Student.</p>
+                  <p className={styles.work}> I &apos;m a Junior Data Engineer.</p>
+                  <p className={styles.work}>Keep in mind that this portfolio is not updated!</p>
                   <p className={styles.who}>I&apos;m a brazilian Software Engineering student at Univates.</p>
                 </h1>
               </div>

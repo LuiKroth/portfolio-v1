@@ -25,7 +25,7 @@ const PTBR: NextPage = () => {
                 <h1>
                   <p className={styles.salution}> Oi, meu nome é</p>
                   <p className={styles.name}>Luiz Kroth.</p>
-                  <p className={styles.work}> Eu sou um estudante de Engenharia de Software.</p>
+                  <p className={styles.work}> Eu sou um Engenheiro de Dados Junior.</p>
                   <p className={styles.who}>Eu sou um estudante Brasileiro de Engenharia de Software na Univates.</p>
                 </h1>
               </div>
